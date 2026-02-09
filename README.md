@@ -1,105 +1,158 @@
 # Walmart-Sales-Report
 <img width="959" height="540" alt="Walmart Sales Report" src="https://github.com/user-attachments/assets/abe4c8c4-65bd-4a87-b857-76f54b8509d2" />
 
-## 📌 Project Objective
+## 📌 Project Overview
 
-The **Walmart Sales Analysis** project is an interactive Power BI dashboard designed to evaluate retail sales performance across **45 Walmart stores**. The analysis focuses on understanding how **macroeconomic indicators**—such as **Consumer Price Index (CPI), fuel prices, unemployment rates**, and **seasonal holidays**—influence total sales and revenue trends over time.
+The **Walmart Sales Analysis** project is an interactive **Power BI dashboard** developed to analyze retail sales performance across **45 Walmart stores** from **2010 to 2012**.
 
-This project demonstrates end-to-end **business intelligence workflows**, from data modeling to insight generation, and is well-suited for data analytics and BI portfolios.
+The primary objective of this project is to evaluate how **macroeconomic indicators**—such as **Consumer Price Index (CPI), fuel prices, unemployment rate, temperature, and holiday seasons**—impact **total sales trends and store-level performance**.
+
+This project demonstrates a complete **Business Intelligence workflow**, including data preparation, data modeling, DAX calculations, KPI development, and insight generation, making it ideal for **Data Analyst and Business Intelligence portfolios**.
+
+---
+
+## 🎯 Business Objectives
+
+* Measure **overall and store-level sales performance**
+* Compare **holiday vs non-holiday sales contribution**
+* Analyze sales behavior against **economic indicators**
+* Identify **high-performing and low-performing stores**
+* Showcase **Power BI, Power Query, and DAX capabilities**
 
 ---
 
 ## 📊 Key Performance Indicators (KPIs)
 
-| KPI                           |    Value |
-| ----------------------------- | -------: |
-| **Total Sales**               |   $6.74B |
-| **Total Stores**              |       45 |
-| **Average CPI**               |   171.58 |
-| **Average Fuel Price**        |    $3.36 |
-| **Average Unemployment Rate** |     8.00 |
-| **Holiday Sales**             | $505.30M |
+| KPI                                    | Value               |
+| -------------------------------------- | ------------------- |
+| **Total Sales**                        | **$6.74 Billion**   |
+| **Total Stores**                       | **45**              |
+| **Average Consumer Price Index (CPI)** | **171.58**          |
+| **Average Fuel Price**                 | **$3.36**           |
+| **Average Unemployment Rate**          | **8.00%**           |
+| **Holiday Sales**                      | **$505.30 Million** |
+
+---
+
+## 🎛️ Dashboard Filters & Parameters
+
+The dashboard includes interactive slicers for dynamic analysis:
+
+* **Date Selector** (2010–2012)
+* **Holiday Flag**
+
+  * `0` → Non-Holiday
+  * `1` → Holiday
+* **Store Selector** (All 45 stores)
+
+These filters allow users to drill down into **specific time periods, stores, and holiday conditions**.
 
 ---
 
 ## 🗂️ Dataset Description
 
-The dataset used in this project combines **store-level sales data** with **external economic indicators** to provide a holistic view of retail performance.
+The dataset combines **weekly store-level sales data** with **external economic indicators** to provide a comprehensive retail performance view.
 
-**Key data attributes include:**
+### 📅 Time Period
 
-* Store ID (45 unique stores)
-* Date (2010–2012 time period)
-* Weekly Sales / Total Sales
-* Temperature
-* Fuel Price
-* Consumer Price Index (CPI)
-* Unemployment Rate
-* Holiday Flag (Holiday vs. Non-Holiday)
+* **February 2010 – October 2012**
+
+### 📌 Key Data Attributes
+
+* **Store ID** (45 unique stores)
+* **Date**
+* **Weekly Sales**
+* **Total Sales**
+* **Temperature**
+* **Fuel Price**
+* **Consumer Price Index (CPI)**
+* **Unemployment Rate**
+* **Holiday Flag** (Holiday vs Non-Holiday)
 
 ---
 
 ## 📈 Dashboard Visualizations & Analysis
 
-### 🏬 Store Performance
+### 🏬 Total Sales by Store
 
-* **Total Sales by Store** bar chart highlights **significant revenue variance** across the 45 stores.
-* Identifies high-performing and underperforming locations for benchmarking and strategic planning.
+* **Bar Chart:** Total Sales by Store
+* Highlights **significant revenue variation** across the 45 stores
+* Enables identification of **top-performing and underperforming stores**
+* Supports **benchmarking and location-based strategy planning**
 
-### 🎉 Holiday vs Non-Holiday Impact
+---
 
-* Holiday sales contribute **$0.51B (7.5%)** of total revenue.
-* Non-holiday periods dominate sales with **$6.23B (92.5%)**, indicating that Walmart’s revenue is largely driven by **consistent everyday demand** rather than seasonal spikes.
+### 🎉 Total Sales by Holiday
 
-### ⛽ Sales vs Fuel Price
+* **Donut Chart:** Holiday vs Non-Holiday Sales
+* **Holiday Sales:** $0.51B (**7.5%**)
+* **Non-Holiday Sales:** $6.23B (**92.5%**)
 
-* Time-series analysis (2010–2012) shows **sales fluctuations alongside fuel price volatility**.
-* Rising fuel prices introduce variability but do not show a direct proportional decline in sales.
+📌 **Insight:**
+Walmart’s revenue is predominantly driven by **non-holiday sales**, indicating strong and consistent baseline demand rather than reliance on seasonal spikes.
 
-### 📉 Sales vs CPI
+---
 
-* CPI demonstrates a **steady upward trend** over time.
-* Sales remain relatively stable despite increasing CPI, suggesting **pricing resilience and demand stability**.
+### ⛽ Total Sales and Fuel Price by Date
 
-### 🌡️ Temperature Correlation
+* **Dual-axis time-series chart**
+* Compares **total sales trends** with **fuel price fluctuations** from 2010–2012
+* Fuel prices show volatility, while sales remain relatively stable
 
-* Scatter plot visualizes sales density across temperature ranges.
-* Indicates **no strong linear relationship**, but highlights operational exposure across diverse climatic conditions.
+📌 **Insight:**
+Rising fuel prices introduce variability but **do not result in a proportional decline in sales**, indicating demand resilience.
+
+---
+
+### 📉 Total Sales and CPI by Date
+
+* **Dual-axis line chart**
+* CPI shows a **steady upward trend**
+* Sales maintain stability despite inflationary pressure
+
+📌 **Insight:**
+Walmart demonstrates strong **pricing power and value positioning**, maintaining sales volume even as CPI increases.
+
+---
+
+### 🌡️ Total Sales by Temperature
+
+* **Scatter Plot:** Sales vs Temperature
+* Sales distributed across a wide temperature range
+* No strong linear correlation observed
+
+📌 **Insight:**
+Sales performance remains consistent across varying climatic conditions, highlighting **operational robustness across regions**.
 
 ---
 
 ## 🔍 Key Insights & Findings
 
-* **Non-holiday sales drive the majority of revenue**, emphasizing Walmart’s strong baseline demand.
-* **Macroeconomic factors** such as CPI and fuel prices influence sales trends but do not drastically suppress demand.
-* Sales performance varies widely by store, underlining the importance of **location-specific strategies**.
-* CPI growth does not significantly erode sales volume, indicating **effective pricing and value positioning**.
+* **92.5% of revenue** comes from non-holiday periods, emphasizing everyday demand strength
+* **Macroeconomic indicators** influence trends but do not drastically suppress sales
+* **Store-level sales variance** suggests the need for localized strategies
+* **CPI growth does not significantly erode sales**, reflecting effective pricing strategies
+* Walmart maintains **stable demand under economic pressure**
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack
 
-* **Power BI** – Interactive dashboards and reporting
-* **Power Query** – Data cleaning and transformation
-* **DAX (Data Analysis Expressions)** – Measures, KPIs, and calculated logic
+* **Power BI** – Interactive dashboards and data visualization
+* **Power Query** – Data cleaning, transformation, and shaping
+* **DAX (Data Analysis Expressions)** – KPIs, measures, and calculations
 * **Data Modeling** – Relationship management and performance optimization
 
 ---
 
-## ▶️ How to Use
-
-1. Download and open the **.pbix** file using **Power BI Desktop**.
-2. Use slicers to filter by **Date**, **Store**, and **Holiday flag**.
-3. Interact with charts to explore sales behavior under different economic conditions.
-4. Apply insights for **retail analysis, forecasting, and strategic decision-making**.
-
----
 
 ## 📌 Use Cases
 
-* Data Analyst / Business Intelligence portfolio project
-* Retail and consumer analytics
-* Macroeconomic impact assessment
-* Power BI and DAX skill demonstration
+* **Data Analyst / Business Intelligence Portfolio Project**
+* **Retail Sales Performance Analysis**
+* **Macroeconomic Impact Assessment**
+* **Power BI & DAX Skill Demonstration**
+* **Store Benchmarking & Trend Analysis**
 
 ---
+
